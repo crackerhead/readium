@@ -651,3 +651,6 @@ body {
   margin-top: 50px; }
 .post-tag-articleimage {
   display: none; }
+span {
+  color: #41bf76;
+}
