@@ -74,12 +74,12 @@ body {
     background-image: url("/assets/img/readium-logo.png");
     background-size: cover;
     background-repeat: no-repeat; 
+  }
       @media only screen and (max-width: 800px) {
         .logo-readium .logo {
         position: relative; 
       }
       }
-  }
 
 .teaserimage {
   height: 450px;
