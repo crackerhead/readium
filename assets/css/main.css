@@ -63,6 +63,7 @@ body {
   background-color: transparent !important;
   overflow: hidden;
   z-index: 99; }
+
   .logo-readium .logo {
     display: block;
     position: absolute;
@@ -72,7 +73,13 @@ body {
     height: 32px;
     background-image: url("/assets/img/readium-logo.png");
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+      @media only screen and (max-width: 800px) {
+        .logo-readium .logo {
+        position: relative; 
+      }
+      }
+  }
 
 .teaserimage {
   height: 450px;
