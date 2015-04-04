@@ -670,6 +670,7 @@ body {
 }
 .post-template .post-content a{
 	color: #41bf76 !important;
+	text-decoration: none !important;
 }
 .post-template .post-content a:hover{
 	color: rgba(65,191,118,0.6) !important;
