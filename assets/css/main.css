@@ -668,10 +668,10 @@ body {
 .green a{
   color: #41bf76 !important;
 }
-.post-template a{
+.post-template .post-content a{
 	color: #41bf76 !important;
 }
-.post-template a:visited{
+.post-template .post-content a:visited{
 	color: rgba(65,191,118,0.6) !important;
 }
 		h3{
