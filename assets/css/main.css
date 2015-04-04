@@ -668,6 +668,12 @@ body {
 .green a{
   color: #41bf76 !important;
 }
+.post-template a{
+	color: #41bf76 !important;
+}
+.post-template a:visited{
+	color: rgba(65,191,118,0.6) !important;
+}
 		h3{
 			font-size: 30px !important;
 		}
