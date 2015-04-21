@@ -68,15 +68,11 @@
 			return 0; //It is not IE
 		}
 		if (GetIEVersion() > 0)
-			alert("This is IE " + GetIEVersion());
-
-		else
 		var txt="It looks like you are using Internet Explorer, for the best experience, you should view this site in ";
 		var or=" or ";
 		var firefox="<a href=\"https://www.mozilla.org/en-US/firefox/new/\">Firefox</a>";
 		var chrome="<a href=\"http://www.google.com/chrome/\">Chrome</a>";
 		var cancel = "<i class=\"icon-cancel-circled\" onclick=\"parentNode.remove()\"></i>";
-			// alert("This is not IE.");
 			document.getElementById("headerIE").innerHTML=txt+chrome+or+firefox+cancel;
     </script>
     <script>
