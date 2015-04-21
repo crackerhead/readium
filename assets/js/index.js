@@ -23,9 +23,7 @@
               $(this).wrap('<figure class="image"></figure>')
               .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
         });
-        
-    });
-        function GetIEVersion() {
+                function GetIEVersion() {
 	var sAgent = window.navigator.userAgent;
 	var Idx = sAgent.indexOf("MSIE");
 	// If IE, return version number.
@@ -46,4 +44,6 @@
 		$("headerIE").html(txt+chrome+or+firefox+cancel);
 		if (GetIEVersion() == 0)
 		$('#headerIE').html('');
+    });
+
 }(jQuery));
