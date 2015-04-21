@@ -75,7 +75,8 @@
 		var cancel = "<i class=\"icon-cancel-circled\" onclick=\"parentNode.remove()\"></i>";
 		document.getElementById("headerIE").innerHTML=txt+chrome+or+firefox+cancel;
 		if (GetIEVersion() == 0)
-		document.getElementById("headerIE").innerHTML='';
+		var elem = document.getElementById("headerIE");
+		elem.parentNode.removeChild(elem);
     </script>
     <script>
         
