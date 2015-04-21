@@ -696,5 +696,5 @@ body {
 		h1{
 			font-size: 42px !important;
 		}
-.alert { padding: 0 10px; font-weight: 600; list-style-type: none; word-wrap: break-word; font-size: 14px; font-size: 0.875rem; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+.alert { text-align: center; padding: 10px 10px; font-weight: 600; list-style-type: none; word-wrap: break-word; font-size: 14px; font-size: 0.875rem; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
 .alert.warning { background: #fbdca0; border: 0px solid #f6b83f; color: #c68609; color: #644405; }
