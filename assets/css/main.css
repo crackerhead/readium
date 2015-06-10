@@ -717,6 +717,9 @@ h6 {
   color: #c68609;
   color: #644405; }
 
+@media screen and (min-width: 1200px) {
+  .navbar-nav li {
+    min-width: 140px; } }
 /* make bootstrap dropdowns work on hover */
 .navbar-nav .dropdown:hover > .dropdown-menu {
   display: block !important; }
@@ -730,6 +733,42 @@ h6 {
 .navbar {
   margin-bottom: 0px;
   background-color: transparent;
-  border: 0px solid white; }
+  border: 0px solid white;
+  height: 105px; }
+  .navbar li {
+    margin-top: 30px; }
+    .navbar li li {
+      margin-top: 5px; }
+
+/* bootsrtap overrides */
+.row {
+  max-width: 1060px;
+  margin: 0 auto; }
+
+.navbar a > span {
+  position: relative;
+  color: #444;
+  text-decoration: none;
+  font-family: "Roboto", Arial, sans-serif; }
+.navbar a > span:hover, .navbar a > i:hover {
+  color: #41bf76 !important; }
+.navbar a > span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -15px;
+  background-color: #41bf76;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+.navbar a > span:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
 
 /*# sourceMappingURL=main.css.map */

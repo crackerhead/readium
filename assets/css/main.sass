@@ -649,6 +649,19 @@ body
 	color: green
 
 //*** NON-READIUM CUSTOM STYLES ***//
+$green: #41bf76
+$greenLite: rgba(65,191,118,0.6)
+$white: white
+$offWhite: #fff
+$whiteBackground: #f6f6f6
+$black: #000
+$darkestGray: #222
+$darkerGray: #2f2f2f
+$darkGray: #444
+$gray: #555
+$fontGray: #a4a4a4
+$grayTransparent: rgba(255,255,255,0.95)
+$primaryFont: 'Roboto', Arial, sans-serif
 
 .green
 	color: #41bf76 !important
@@ -698,7 +711,11 @@ h6
 	border: 0px solid #f6b83f
 	color: #c68609
 	color: #644405
-//*** NON-READIUM CUSTOM STYLES ***//
+
+@media screen and (min-width: 1200px)
+	.navbar-nav li
+		min-width: 140px
+
 /* make bootstrap dropdowns work on hover */
 .navbar-nav .dropdown:hover > .dropdown-menu
 	display: block !important
@@ -712,3 +729,43 @@ h6
 	margin-bottom: 0px
 	background-color: transparent
 	border: 0px solid white
+	height: 105px
+	li
+		margin-top: 30px
+		li
+			margin-top: 5px
+/* bootsrtap overrides */
+.row
+	max-width: 1060px
+	margin: 0 auto
+	// UNDERLINE NAVBAR HOVER STATE START ==========
+.navbar
+	a > span
+		position: relative
+		color: $darkGray
+		text-decoration: none
+		font-family: $primaryFont
+
+	a > span:hover, a > i:hover
+		color: $green !important
+
+	a > span:before
+		content: ""
+		position: absolute
+		width: 100%
+		height: 2px
+		bottom: 0
+		left: 0
+		margin-bottom: -15px
+		background-color: $green
+		visibility: hidden
+		-webkit-transform: scaleX(0)
+		transform: scaleX(0)
+		-webkit-transition: all 0.3s ease-in-out 0s
+		transition: all 0.3s ease-in-out 0s
+
+	a > span:hover:before
+		visibility: visible
+		-webkit-transform: scaleX(1)
+		transform: scaleX(1)
+	// UNDERLINE NAVBAR HOVER STATE END ==========
