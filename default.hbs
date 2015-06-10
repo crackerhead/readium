@@ -44,32 +44,7 @@
 </head>
 <body class="{{body_class}}">
     <div class="warning alert" id ="headerIE"></div>
-<!-- <nav gumby-fixed="250">
-   <div class="row navbar" id="nav1">
-      <a class="toggle" gumby-trigger="#nav1 > ul" href="#"><i class="icon-menu"></i></a>
-      <h1 class="three columns logo">
-         <a href="index.php">
-            <img src="assets/img/nemLogo.svg" alt="New Economy Movement" class="svg-inject" gumby-retina />
-         </a>
-      </h1>
-                  <ul class="nine columns">
-                     <li><a href="#"><span id="navclient">CLIENT</span></a></li>
-                     <li><a href="#"><span id="navbuy">BUY XEM</span></a></li>
-                     <li>
-                        <a id="support" href="#"><span>SUPPORT</span</a>
-                           <div class="dropdown">
-                           <ul>
-                              <li><a href="faq.html">FAQ</a></li>
-                              <li class=""><a href="http://blog.nem.io/nem-tutorial-list/">TUTORIAL</a></li>
-                              <li class=""><a href="http://support.ournem.com/">HELP DESK</a></li>
-                           </ul>
-                           </div>
-                     </li>
-                     <li class="skiplink"><a href="#"><span id="navupdate">UPDATES</span></a></li>
-      </ul>
-   </div>
-</nav> -->
-<div class="container">
+<div class="container nav-container">
 <div class="row">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -81,20 +56,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="assets/img/nemlogo.svg"/></a>
+      <a class="navbar-brand" href="http://nem.io/"><img class="inject-me" src="assets/img/nemlogo.svg"/></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://nem.io/install.html"><span>CLIENT</span></a></li>
-        <li><a href="http://nem.io/install.html"><span>BUY XEM</span></a></li>
+        <li><a href="http://nem.io/#buyheader"><span>BUY XEM</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>SUPPORT <span class="caret"></span></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">FAQ's</a></li>
-            <li><a href="#">TUTORIALS</a></li>
-            <li><a href="#">HELP DESK</a></li>
+            <li><a href="http://nem.io/faq.html">FAQ's</a></li>
+            <li><a href="http://blog.nem.io/nem-tutorial-list/">TUTORIALS</a></li>
+            <li><a href="http://support.ournem.com/">HELP DESK</a></li>
           </ul>
         </li>
         <li><a href="http://nem.io/#news"><span>UPDATES</span></a></li>
@@ -105,7 +80,7 @@
 </nav>
 </div>
 </div>
-    <a href="{{@blog.url}}" class="logo-readium"><span class="logo" style="background-image: url({{@blog.logo}})"></span></a>
+    <!-- <a href="{{@blog.url}}" class="logo-readium"><span class="logo" style="background-image: url({{@blog.logo}})"></span></a> -->
     {{! Everything else gets inserted here }}
     {{{body}}}
 
@@ -117,8 +92,16 @@
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     <script src="{{asset "js/readingTime.min.js"}}"></script>
     <script src="{{asset "js/highlight.pack.js"}}"></script>
+    <script src="node_modules/svg-injector/svg-injector.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+     // Elements to inject
+     var mySVGsToInject = document.querySelectorAll('img.inject-me');
+
+     // Do the injection
+     SVGInjector(mySVGsToInject);
+   </script>
     <script>
                 function GetIEVersion() {
 	var sAgent = window.navigator.userAgent;
