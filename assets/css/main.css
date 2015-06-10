@@ -722,6 +722,10 @@ h6 {
   color: #c68609;
   color: #644405; }
 
+.post-reading {
+  margin-top: 60px;
+  margin-right: 30px; }
+
 /* make bootstrap dropdowns work on hover */
 .navbar-nav .dropdown:hover > .dropdown-menu {
   display: block !important; }
