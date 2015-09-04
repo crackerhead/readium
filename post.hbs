@@ -149,17 +149,10 @@
                 </div>
             </div>
             <!--{{> comment-list}}-->
-                        <div id='discourse-comments'></div>
-            <script type="text/javascript">
-              DiscourseEmbed = { discourseUrl: 'http://blog.nem.io/',
-                                 discourseEmbedUrl: 'http://blog.nem.io/{{title}}/' };
-
-              (function() {
-                var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-                d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-              })();
-            </script>
+            <section class="post-comment">
+               <a class="muut" title="Comments on {{{title}}}" type="dynamic" href="https://muut.com/i/nemblog/comments:{{{title}}}">NEM Blog</a>
+               <script src='//cdn.muut.com/1/moot.min.js'/>
+            </section>
 
 
     </article>
