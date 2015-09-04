@@ -149,20 +149,18 @@
                 </div>
             </div>
             <!--{{> comment-list}}-->
-            <section class="post-comment">
-               <div id='discourse-comments'></div>
+            <!--{{> comment-list}}-->
+            <div id='discourse-comments'></div>
+            <script type="text/javascript">
+              DiscourseEmbed = { discourseUrl: 'http://blog.nem.io/',
+                                 discourseEmbedUrl: 'http://blog.nem.io/{{{title}}}/' };
 
-<script type="text/javascript">
-  DiscourseEmbed = { discourseUrl: 'http://blog.nem.io/',
-                     discourseEmbedUrl: 'http://blog.nem.io/{{{title}}}' };
-
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
-            </section>
+              (function() {
+                var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+              })();
+            </script>
 
 
     </article>
