@@ -793,7 +793,7 @@ h6 {
   min-height: 600px; }
 
 #discourse-comments iframe {
-  height: 600px;
+  height: 100% !important;
   /* had to rename a container in readium theme, it was conflicting with bootstrap */ }
 
 /*# sourceMappingURL=main.css.map */
