@@ -669,20 +669,20 @@ body {
   margin: 0 auto; }
 
 .green {
-  color: #41bf76 !important; }
+  color: #5ab3e8 !important; }
 
 .green a {
-  color: #41bf76 !important; }
+  color: #5ab3e8!important; }
 
 .post-template .post-content a {
-  color: #41bf76 !important;
+  color: #5ab3e8 !important;
   text-decoration: none !important; }
 
 .post-template .post-content a:hover {
-  color: rgba(65, 191, 118, 0.6) !important; }
+  color: rgba(116,200,236,0.6) !important; }
 
 .post-template .post-content a:visited {
-  color: rgba(65, 191, 118, 0.6) !important; }
+  color: rgba(116,200,236,0.6) !important; }
 
 h1 {
   font-size: 42px !important; }
