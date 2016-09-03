@@ -661,7 +661,7 @@ body {
 
 .post-tag-articleimage {
   display: none;
-  color: green; }
+  color: #5ab3e8; }
 
 /* bootsrtap overrides */
 .row {
@@ -755,7 +755,7 @@ h6 {
   .dropdown ul li a:hover {
     border: none;
     background-color: transparent;
-    color: #41bf76; }
+    color: #5ab3e8; }
 
 .navbar-toggle {
   margin-top: 35px; }
@@ -769,7 +769,7 @@ h6 {
   text-decoration: none;
   font-family: "Roboto", Arial, sans-serif; }
 .navbar a > span:hover, .navbar a > i:hover {
-  color: #41bf76 !important; }
+  color: #5ab3e8 !important; }
 .navbar a > span:before {
   content: "";
   position: absolute;
